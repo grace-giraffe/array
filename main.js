@@ -1,8 +1,9 @@
 //Display an array from the cities in gotCitiesCSV
-var cities = ['kings landing','bravos','volantis','Old Valyria','free cities','Qarth','Meereen']
+var cities = ['kings landing', 'bravos', 'volantis', 'Old Valyria', 'free cities', 'Qarth', 'Meereen']
 cities;
 //Display an array of words from the sentence in bestThing
-
+var bestThing = ["The best thing about a boolean is even if you are wrong you are only off by a bit"]
+bestThing;
 //Display a string separated by semi-colons instead of commas from gotCitiesCSV
 
 //Display a CSV (comma-separated) string from the lotrCitiesArray
