@@ -1,5 +1,6 @@
 //Display an array from the cities in gotCitiesCSV
-
+var cities = ['kings landing','bravos','volantis','Old Valyria','free cities','Qarth','Meereen']
+cities;
 //Display an array of words from the sentence in bestThing
 
 //Display a string separated by semi-colons instead of commas from gotCitiesCSV
