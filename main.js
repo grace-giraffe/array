@@ -32,7 +32,16 @@ console.log(k7);
 var k8 = bestThing.indexOf("only");
 console.log(k8);
 //Find and display all cities from gotCitiesCSV  that use double vowels ("aa","ee", etc.)
-
+var kata9array = gotCitiesCSV.split(',');
+       var kata9 = [];
+       for (var i = 0; i < 7; i++) {
+           var kata9temp = kata9array[i];
+           console.log(kata9temp);
+           if (kata9temp.includes("aa") || kata9temp.includes("ee") || kata9temp.includes("ii") || kata9temp.includes(
+                   "oo") || kata9temp.includes("uu")) {
+               kata9.push(kata9temp);
+           }
+       }
 //Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)
 var k10 = lotrCitiesArray;
        k10.sort(function(a,b){
