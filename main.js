@@ -1,5 +1,5 @@
 const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
-const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+const lotrCitiesArray = ["Mordor", "Gondor", "Rohan", "Beleriand", "Mirkwood", "Dead Marshes", "Rhun", "Harad"];
 const bestThing = "The best thing about a boolean is even if you are wrong you are only off by a bit"
 //Display an array from the cities in gotCitiesCSV
 k1 = gotCitiesCSV.split(',');
@@ -15,18 +15,27 @@ console.log(k3);
 var k4 = lotrCitiesArray.join(",");
 console.log(k4);
 //Display the last 5 cities in lotrCitiesArray
-var k5= [];
-for (var i= 3; i < 8; i++) {
-    var arrayItem= lotrCitiesArray[i];
+var k5 = [];
+for (var i = 3; i < 8; i++) {
+    var arrayItem = lotrCitiesArray[i];
     k5.push(arrayItem);
 }
 console.log(k5);
 //Using splice, remove "Rohan" from lotrCitiesArra
-
+var k6 = lotrCitiesArray;
+k6.splice(2, 1);
+console.log(k6);
 //Using slice, display characters between the 23rd and 38th position of bestThing (i.e., "boolean is even"
-
+var k7= bestThing.slice(23, 38);
+console.log(k7);
 //Find and display the index of "only" in bestThing
-
+var k8 = bestThing.indexOf("only");
+console.log(k8);
 //Find and display all cities from gotCitiesCSV  that use double vowels ("aa","ee", etc.)
 
 //Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)
+var k10 = lotrCitiesArray;
+       k10.sort(function(a,b){
+           return a.length-b.length;
+       }
+    );
