@@ -40,11 +40,14 @@ var kata9array = gotCitiesCSV.split(',');
            if (kata9temp.includes("aa") || kata9temp.includes("ee") || kata9temp.includes("ii") || kata9temp.includes(
                    "oo") || kata9temp.includes("uu")) {
                kata9.push(kata9temp);
+               console.log(kata9);
            }
        }
+       
 //Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)
 var k10 = lotrCitiesArray;
        k10.sort(function(a,b){
            return a.length-b.length;
+           console.log(k10);
        }
     );
